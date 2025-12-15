@@ -1,0 +1,142 @@
+.course-detail {
+  padding: 40px 0;
+  min-height: calc(100vh - 70px);
+}
+
+.course-header {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin-bottom: 60px;
+  align-items: start;
+}
+
+.course-info h1 {
+  font-size: 42px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.course-badge {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.level-badge {
+  background: #e3f2fd;
+  color: #1976d2;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.price-badge {
+  background: #f3e5f5;
+  color: #7b1fa2;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.course-description {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.course-meta-info {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+  color: #666;
+}
+
+.course-image {
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.course-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.course-content {
+  margin-top: 60px;
+}
+
+.lessons-section h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.lessons-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.lesson-item {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 20px;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.lesson-number {
+  width: 50px;
+  height: 50px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 20px;
+  flex-shrink: 0;
+}
+
+.lesson-info {
+  flex: 1;
+}
+
+.lesson-info h3 {
+  font-size: 20px;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.lesson-info p {
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.lesson-duration {
+  font-size: 14px;
+  color: #999;
+}
+
+@media (max-width: 968px) {
+  .course-header {
+    grid-template-columns: 1fr;
+  }
+
+  .course-info h1 {
+    font-size: 32px;
+  }
+}
+
