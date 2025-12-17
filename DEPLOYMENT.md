@@ -27,7 +27,7 @@ Fill in the following:
 | **Environment** | Python 3 |
 | **Region** | Choose closest to you |
 | **Branch** | main |
-| **Build Command** | `pip install -r backend/requirements.txt && cd backend && python manage.py migrate && python manage.py collectstatic --noinput` |
+| **Build Command** | `bash build.sh` |
 | **Start Command** | `cd backend && gunicorn learning_platform.wsgi:application --bind 0.0.0.0:$PORT` |
 
 #### 4. Add Environment Variables
@@ -36,7 +36,7 @@ Click **"Advanced"** and add these variables:
 ```
 DEBUG=False
 SECRET_KEY=your-new-secure-random-key-here
-ALLOWED_HOSTS=.onrender.com
+ALLOWED_HOSTS=.onrender.com,learning-platform-three-rho.vercel.app
 ```
 
 **Generate a secure SECRET_KEY:**
